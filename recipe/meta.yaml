@@ -1,5 +1,5 @@
 {% set name = "cythonbiogeme" %}
-{% set version = "1.0.3" %}
+{% set version = "1.0.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cythonbiogeme-{{ version }}.tar.gz
-  sha256: 1e869d482d51fde70bdb88a52207a30081f2ef0d9ee8a5b0f7df850cae4d1719
+  sha256: 94cc5fc82870644ca80f98d8a1a8cb6fa0e295929cc1d0319c54cc003f3b452a
 
 build:
   skip: true  # [py<310]
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   build:
