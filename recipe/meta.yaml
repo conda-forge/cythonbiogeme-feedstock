@@ -12,7 +12,7 @@ source:
 build:
   skip: true  # [py<310]
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -41,7 +41,7 @@ test:
 about:
   home: https://github.com/michelbierlaire/cythonbiogeme
   summary: C++ part of the Biogeme package
-  license: Custom
+  license: LicenseRef-CYTHONBIOGEME
   license_file: LICENSE
 
 extra:
