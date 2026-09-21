@@ -25,7 +25,7 @@ requirements:
     - {{ stdlib("c") }}
   host:
     - cython >=3.0.10
-    - numpy >=2
+    - numpy
     - pip
     - python
     - setuptools >=70.1.1
